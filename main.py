@@ -18,8 +18,8 @@ INFLUXDB_DATABASE = 'telegraf'
 MQTT_ADDRESS = '172.19.0.4'
 MQTT_USER = ''
 MQTT_PASSWORD = ''
-MQTT_TOPIC = 'home/+/+'  # [Schlafzimmer|mijia]/sensor/[temperature|humidity|battery|status]
-MQTT_REGEX = 'home/([^/]+)/([^/]+)'
+MQTT_TOPIC = 'shellies/+/+'  # [Schlafzimmer|mijia]/sensor/[temperature|humidity|battery|online]
+MQTT_REGEX = 'shellies/([^/]+)/([^/]+)'
 MQTT_CLIENT_ID = 'MQTTInfluxDBBridge'
 
 influxdb_client = InfluxDBClient(INFLUXDB_ADDRESS, 8086, INFLUXDB_USER, INFLUXDB_PASSWORD, None)
