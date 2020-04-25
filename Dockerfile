@@ -9,4 +9,4 @@ RUN pip install -r /requirements.txt
 COPY . /app
 WORKDIR /app
 
-CMD ["python3", "-u", "main.py"]
+CMD ["python", "./main.py"]
